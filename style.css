@@ -1,0 +1,422 @@
+html {
+  scroll-behavior: smooth;
+}
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-item:nth-of-type(1)t {
+  display: flex;
+  align-items: center;
+}
+.header-item:nth-of-type(2) {
+  display: flex;
+  align-items: center;
+}
+
+.logo-and-title-container { 
+  display: flex;
+  align-items: center; 
+}
+.title {
+  display: flex;
+}
+
+.logo { 
+  margin-right: 10px;
+  width: 70px;
+  height: auto;
+}
+
+#dink-color, #hub-color {
+  margin: 0; 
+}
+
+#header-logo {
+  width: 70px;
+  height: auto;
+}
+#header-img {
+  margin-left: 10px; 
+  margin-right: 10px; 
+  width: auto; 
+  max-width: 500px; 
+  border-radius: 5px;
+  transition: max-width 0.3s ease;
+}
+#header-img:hover {
+  max-width: 600px;
+}
+
+#spacing-left {
+  margin-left: 50px;
+}
+#motion-button {
+  font-family: Helvetica;
+  font-weight: bold;
+  font-size: 16px; 
+  background-color: #007eb7; 
+  color: white;
+  padding: 12px 24px; 
+  margin-top: 10px; 
+  margin-bottom: 10px; 
+  border-radius: 5px;
+  cursor: pointer; 
+  text-align: center; 
+  border: 0px;
+  transition: background-color 0.3s ease;
+}
+#motion-button:hover {
+  background-color: #c67f2f;
+  transition: background-color 0.3s;
+}
+
+.header-button {
+  font-family: Helvetica;
+  font-weight: bold;
+  font-size: 16px; 
+  background-color: #25b0e9; 
+  color: white;
+  padding: 12px 24px; 
+  margin-top: 20px; 
+  margin-bottom: 10px; 
+  border-radius: 5px;
+  cursor: pointer; 
+  text-align: center; 
+  border: 0px;
+  transition: background-color 0.3s ease;
+}
+.header-button:hover {
+  background-color: #ff9e2e;
+  transition: background-color 0.3s;
+}
+
+.centered-titles {
+  display: flex;
+  justify-content: center;
+  flex: 1;
+}
+
+.image-and-button-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+h1, h2, h3, h4, p {
+  margin-bottom: 1rem;
+}
+
+#dink-color {
+  color: #25b0e9;
+}
+
+#hub-color {
+  color: #ff9e2e;
+}
+
+a {
+  color: #25b0e9;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:visited {
+  color: #ff9e2e;
+}
+p {
+  font-family: Helvetica;
+  line-height: 1.4;
+  font-weight: 550;
+}
+body {
+  font-family: Helvetica;
+  background-color: #d9dadf;
+  margin: 0;
+  padding: 20px;
+  color: #333;
+}
+.footer {
+  text-align: center;
+  background-color: darkgray;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  opacity: 0.0;
+  border-radius: 5px;
+  transition: opacity 0.5s;
+}
+
+.footer:hover {
+  opacity: 1.0;
+}
+
+.iframe-container {
+  background-color: darkgray;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; 
+  padding: 20px;
+  border-radius: 5px;
+}
+.iframe-style {
+  border-radius: 5px;
+  transition: width 0.3s ease;
+}
+.iframe-style:hover{
+  width: 520px;
+  height: 280px;
+}
+#last-content {
+  margin-bottom: 80px;
+}
+.navbar ul {
+    list-style: none;
+    /*erm i like it how it is so i wont update anything here */
+}
+
+.navbar ul li {
+    float: left;
+    margin: 10px;
+}
+
+.navbar ul li a {
+  font-family: Helvetica;
+  font-weight: bold;
+  font-size: 16px; 
+  background-color: #25b0e9; 
+  color: white;
+  padding: 12px 24px; 
+  margin: 10px; 
+  border-radius: 5px;
+  cursor: pointer; 
+  text-align: center;
+  display: block;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.navbar ul li a:hover {
+    background-color: #ff9e2e;
+    text-decoration: none;
+}
+
+.navbar-container { 
+  display: flex;
+  justify-content: space-around;
+}
+/* Style the dropdown container */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown > a:after {
+  content: " ▼"; 
+  display: inline-block; 
+  transition: transform 0.3s;
+}
+/* Hover state: arrow right */
+.dropdown:hover > a:after {
+  transform: rotate(180deg);
+  transition: transform 0.3s;
+}
+/* Style the dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  margin-left: 5px;
+  background-color: darkgray;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 5px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+#theme-button {
+  font-family: Helvetica;
+  font-weight: bold;
+  font-size: 16px; 
+  background-color: #007eb7; 
+  color: white;
+  padding: 10px 22px; 
+  margin: 10px; 
+  border-radius: 5px;
+  cursor: pointer; 
+  text-align: center; 
+  border: 0px;
+  transition: background-color 0.3s ease;
+}
+#theme-button:hover {
+  background-color: #c67f2f;
+  transition: background-color 0.3s;
+}
+
+.dark-mode {
+background-color: black;
+color: white;
+}
+.dark-mode .navbar ul li a {
+  background-color: #333; /* Darker buttons */
+  color: #fff;
+}
+.dark-mode .navbar ul li a:hover {
+  background-color: #555; /* Even darker on hover */
+}
+.dark-mode #theme-button {
+  background-color: #777; /* Darker buttons */
+  color: #fff;
+}
+.dark-mode #theme-button:hover{
+  background-color: #999; /* Darker buttons */
+}
+.dark-mode .header-button {
+  background-color: #333; 
+  color: white;
+}
+.dark-mode .header-button.header-button:hover {
+  background-color: #555; 
+  color: white;
+}
+.dark-mode .footer {
+  background-color: #000000;
+}
+.dark-mode .iframe-container {
+  background-color:#333;
+}
+.dark-mode #motion-button {
+  background-color: #333; 
+  color: white;
+}
+.dark-mode #motion-button:hover {
+  background-color: #999; 
+}
+.iframe-containeer {
+  padding-top: 20px;
+  margin-left: 500px;
+  width: 900px;
+  height: 700px;
+}
+.text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+.petition-container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  width: 100;
+}
+.petition-para{
+  width: 55%;
+  padding-right: 10px;
+}
+.signatures {
+  width: 45%;
+  padding-right: 10px;
+}
+input {
+  width: 13%;
+  padding: 12px 18px;
+  margin: 8px 0; 
+  border: 2px solid #ccc; 
+  border-radius: 5px;
+  font-family: Helvetica;
+  font-weight: 700;
+  font-size: 16px; 
+  background-color: #f8f8f8;
+  transition: all 0.5s ease;
+}
+input:hover {
+  background-color: #cccccc;
+}
+.error {
+  border-style: solid;
+  border-width: 2px;
+  border-color: red;
+  background-color: pink; 
+  color: darkred; 
+  padding: 8px; 
+  transition: all 0.3s ease; 
+}
+.revealable {
+  opacity: 0;
+  transform: translateY(150px);
+  transition: all 2s ease;
+  position: relative;
+}
+.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+.modal {
+  display: none; /* hides the modal from view by default*/
+  position: fixed; /* keeps the modal in one place */
+  z-index: 2; /* positions the modal on top of all other elements on the screen */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  background-color: rgba(0,0,0,0.4); /* 40% opacity black - other elements can still be seen */
+  flex-direction: column; /* these flexbox rules center the content on the screen */
+  align-items: center;
+  justify-content: center;
+  
+}
+
+/* box that contains all the content and images */
+.modal-content {
+  background-color: lightsteelblue; /* update the colors and font sizes as you like */
+  color: black;
+  text-align: center;
+  font-size: 25px;
+  display: flex; /* adds flexbox to center all items */
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+}
+
+#thanks-modal-content {
+  width: 20rem; /* sets a default width for the text container */
+}
+
+#modal-text-container {
+  display: flex; /* adds flexbox to center the text and buttons (stretch feature) */
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#modal-img {
+  width: 50%;
+}
+#close-modal {
+  font-family: Helvetica;
+  font-weight: bold;
+  font-size: 16px; 
+  background-color: #25b0e9; 
+  color: white;
+  padding: 10px 22px; 
+  margin: 10px; 
+  border-radius: 5px;
+  cursor: pointer; 
+  text-align: center; 
+  border: 0px;
+  transition: background-color 0.3s ease;
+}
+#close-modal:hover {
+  background-color: #ff9e2e;
+  transition: background-color 0.3s;
+}
